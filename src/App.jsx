@@ -3,6 +3,8 @@ import Menu from "./components/Menu";
 import Terms from "./components/Terms";
 import Programs from "./components/Programs";
 import Program from "./components/Program";
+import { ProgramsProvider } from "./providers/ProgramsContext";
+import ProgramList from "./components/ProgramList";
 
 function App() {
   return (
@@ -11,7 +13,10 @@ function App() {
       <Menu />
       <Terms />
       <Programs />
-      <Program 
+      <ProgramsProvider>
+        <ProgramList />
+      </ProgramsProvider>
+      {/* <Program 
         programNumber="1"
         programName="Интеллектуальные технологии на&nbsp;железнодорожном транспорте"
         programAction1="Aкадемических часов: 252"
@@ -53,10 +58,9 @@ function App() {
         programModule2="Разработка и проектирование устройств"
         programModule3="Особенности применения интернета-вещей"
         programModule4="Производственная практика, в том числе в форме стажировки"
-      />
+      /> */}
     </div>
   );
 }
 
 export default App;
-
