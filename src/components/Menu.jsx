@@ -1,4 +1,8 @@
+// eslint-disable-next-line no-unused-vars
+import React, {useState} from "react";
+
 function Menu () {
+
     return <section className="menu">
     <div className="menu-icon">
         <a className="menu-link" href="#"><span className="menu-line"></span></a>

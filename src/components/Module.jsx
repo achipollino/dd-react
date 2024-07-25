@@ -1,3 +1,5 @@
+import { arrayOf, string } from 'prop-types';
+
 const Module = ({ module }) => {
   return (
     <div>

@@ -4,7 +4,9 @@ import Terms from "./components/Terms";
 import Programs from "./components/Programs";
 import { ProgramsProvider } from "./providers/ProgramsContext";
 import ProgramList from "./components/ProgramList";
-import QnA from "./components/QnA";
+import { QnAProvider } from "./providers/QnAContext";
+import QnAStart from "./components/QnAStart";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,7 +18,10 @@ function App() {
       <ProgramsProvider>
         <ProgramList />
       </ProgramsProvider>
-      <QnA />
+      <QnAProvider>
+        <QnAStart />
+      </QnAProvider>
+      <Footer />
     </div>
   );
 }
