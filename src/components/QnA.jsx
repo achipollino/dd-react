@@ -1,27 +1,17 @@
+import React, { useState } from 'react';
 
-import React from "react";
+const QnA = ({ question, answer, }) => {
+  const [isActive, setIsActive] = useState(false);
 
-const QnA = ({faq}) => {
-    return <section id="faq" className="faq">
-    <div className="container">
-        <h2 className="terms-title title wow animate__fadeInUp">
-            Вопросы и ответы
-        </h2>
-        <div>
-            {faq.map((index, qna) => (
-                <div key={index}>
-                    <p className="ui-accordion-header wow animate__fadeInUp">
-                        <span className="module">{qna.q}</span>
-                        <span className="ui-accordion-header-icon"></span>
-                    </p>
-                    <p className="ui-accordion-content">
-                        {qna.a}
-                    </p>
-                </div>
-            ))}
-    </div>
-    </div>
-</section>
-}
+  return (
+            <div className="ui-accordion">
+                <p className="ui-accordion-header" onClick={() => setIsActive(!isActive)}>
+                    <span className="module-faq">{question}</span>
+                    {isActive ? <span className="ui-accordion-faq-icon-up"></span> : <span className="ui-accordion-faq-icon"></span>}
+                </p>
+                {isActive && <p className="ui-accordion-faq-content">{answer}</p>}
+            </div>
+    );
+};
 
 export default QnA;

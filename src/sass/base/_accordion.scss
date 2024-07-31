@@ -2,7 +2,7 @@
     list-style-type: none;
     margin: 16px;
     padding: 16px;
-    background-color: #dcdcdc;
+    background-color: red;
     border-radius: 7px;
 }
 
@@ -66,6 +66,16 @@
     position: absolute;
     top: calc(50% - 2px);
     right: 0;
+}
+
+.ui-accordion-faq-icon-up {
+    background: url("../img/arrow-purple.svg") no-repeat center;
+    width: 14px;
+    height: 8px;
+    position: absolute;
+    top: calc(50% - 2px);
+    right: 0;
+    transform: rotate(180deg);
 }
   
 .ui-accordion-header:hover .ui-accordion-header-icon {

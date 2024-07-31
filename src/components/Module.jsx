@@ -1,17 +1,22 @@
-import { arrayOf, string } from 'prop-types';
+import React, { useState } from 'react';
 
 const Module = ({ module }) => {
+
+  const [isActive, setIsActive] = useState(false);
+
   return (
     <div>
-      <p className="ui-accordion-header wow animate__fadeInUp">
+      <p className="ui-accordion-header" onClick={() => setIsActive(!isActive)}>
         <span className="module">Модуль {module.id}.</span> {module.title}
-        <span className="ui-accordion-header-icon"></span>
+        <span>{isActive ? <span className="ui-accordion-header-icon"></span> : <span className="ui-accordion-header-icon"></span>}</span>
       </p>
-      <ul className="ui-accordion-content">
-        {(module.topics ?? []).map((topic, index) => (
-          <li key={index}>{topic}</li>
-        ))}
-      </ul>
+      {isActive && 
+        <ul className="ui-accordion-content">
+          {(module.topics ?? []).map((topic, index) => (
+            <li key={index}>{topic}</li>
+          ))}
+        </ul>
+        }
     </div>
   );
 };
