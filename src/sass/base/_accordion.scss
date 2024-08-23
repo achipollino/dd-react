@@ -58,6 +58,20 @@
     top: calc(50% - 2px);
     right: 0;
 }
+
+.ui-accordion-module-icon-up {
+    background: url("../img/arrow-white.svg") no-repeat center;
+    width: 14px;
+    height: 8px;
+    position: absolute;
+    top: calc(50% - 2px);
+    right: 0;
+    transform: rotate(180deg);
+}
+
+.ui-accordion-header:hover .ui-accordion-module-icon-up {
+    background-image: url("../img/arrow-purple.svg");
+}
   
 .ui-accordion-faq-icon {
     background: url("../img/arrow-purple.svg") no-repeat center;
@@ -98,7 +112,6 @@
 }
 
 .ui-accordion-content {
-    display: none;
     margin-top: 20px;
     margin-bottom: 20px;
     list-style: none;

@@ -1,5 +1,4 @@
 import Module from "./Module";
-import { arrayOf, string } from 'prop-types';
 
 const Program = ({ program }) => {
   return (
