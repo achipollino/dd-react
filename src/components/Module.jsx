@@ -9,7 +9,7 @@ const Module = ({ module }) => {
         <span className="module">Модуль {module.id}.</span> {module.title}
         <span>
           {isActive ? (
-            <span className="ui-accordion-module-icon-up"></span>
+            <span className="ui-accordion-header-icon"></span>
           ) : (
             <span className="ui-accordion-header-icon"></span>
           )}
