@@ -5,33 +5,22 @@ function Programs () {
         <ul className="programs-items">
             <li className="programs-item wow animate__fadeInUp">
                 <a href="#program01" className="programs-link">
-                    Интеллектуальные технологии на&nbsp;железнодорожном транспорте
+                    Цифровые технологии на железнодорожном транспорте
                 </a>
             </li>
             <li className="programs-item wow animate__fadeInUp">
                 <a href="#program02" className="programs-link">
-                    Технологии интернета вещей
+                    Интернет вещей в системе мониторинга инфраструктуры железнодорожного транспорта
                 </a>
             </li>
             <li className="programs-item wow animate__fadeInUp">
                 <a href="#program03" className="programs-link">
-                    Маркетинг и&nbsp;коммуникация в&nbsp;цифровой среде
+                    Применение цифровых технологий в продвижении транспортно-логистических услуг
                 </a>
             </li>
             <li className="programs-item wow animate__fadeInUp">
                 <a href="#program04" className="programs-link">
-                    Системы автоматизированного проектирования для транспортной
-                    отрасли
-                </a>
-            </li>
-            <li className="programs-item wow animate__fadeInUp">
-                <a href="#program05" className="programs-link">
-                    Автоматизация бизнес-процессов средствами платформы 1С:Предприятие
-                </a>
-            </li>
-            <li className="programs-item wow animate__fadeInUp">
-                <a href="#program06" className="programs-link">
-                    Менеджмент цифровых продуктов
+                    Технологии информационного моделирования на железнодорожном транспорте
                 </a>
             </li>
         </ul>
