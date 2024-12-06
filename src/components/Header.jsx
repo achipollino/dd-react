@@ -7,7 +7,7 @@ function Header () {
     return <header className="header">
     <div className="container">
         <div className="logo">
-             <a href="#" target="_blank" rel="noreferrer">
+            <a href="#" target="_blank" rel="noreferrer">
                 <img src={logoDD} alt="LogoDD" className="dd"/>
             </a>
             <a href="https://www.pgups.ru/" target="_blank" rel="noreferrer">
@@ -17,6 +17,19 @@ function Header () {
                 <img src={logoPriority} alt="LogoPriority" className="priority"/>
             </a>
         </div>
+        <nav className="header__navigation">
+            <ul className="navigation__ul">
+                <li className="navigation__li"><a href="#" className="navigation__link">Программы</a></li>
+                <li className="navigation__li"> | </li>
+                <li className="navigation__li"><a href="#" className="navigation__link">План обучения</a></li>
+                <li className="navigation__li"> | </li>
+                <li className="navigation__li"><a href="#" className="navigation__link">Партнёры</a></li>
+                <li className="navigation__li"> | </li>
+                <li className="navigation__li"><a href="#" className="navigation__link">Новости</a></li>
+                <li className="navigation__li"> | </li>
+                <li className="navigation__li"><a href="#" className="navigation__link">Контакты</a></li>
+            </ul>
+        </nav>
         <div className="header__block">
             <div className="header-info">
                 <p className="header-project wow animate__fadeInDown">ПРОЕКТ</p>
@@ -24,10 +37,6 @@ function Header () {
                     ЦИФРОВАЯ <br/>
                     КАФЕДРА
                 </h1>
-                <p className="header-text wow animate__fadeInUp">
-                    Объявляет набор <br/>
-                    на программы 2024/2025 учебного года
-                </p>
             </div>
             <div className="header-image">
                 <img src={imageBanner} alt="imageBanner"/>

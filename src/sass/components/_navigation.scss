@@ -1,33 +1,52 @@
-.navigation {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 4000;
-    text-align: center;
-    background: $color-navigation-bg;
-    padding: 30px 0;
-    display: none;
-}
+// .navigation {
+//     position: fixed;
+//     left: 0;
+//     top: 0;
+//     height: 100%;
+//     width: 100%;
+//     z-index: 4000;
+//     text-align: center;
+//     background: $color-navigation-bg;
+//     padding: 30px 0;
+//     display: none;
+// }
   
-  .navigation.is-visible {
-    display: block;
-}
+//   .navigation.is-visible {
+//     display: block;
+// }
   
-  .menu-items li {
-    text-align: left;
-    margin: 20px 60px;
-    list-style-type: none;
-}
+//   .menu-items li {
+//     text-align: left;
+//     margin: 20px 60px;
+//     list-style-type: none;
+// }
   
-  .menu-items li a {
-    text-decoration: none;
-    color: white;
-    font-size: 26px;
-    @extend %transition;
-}
+//   .menu-items li a {
+//     text-decoration: none;
+//     color: white;
+//     font-size: 26px;
+//     @extend %transition;
+// }
   
-  .menu-items li a:hover {
-    color: $color-item-hover;
+//   .menu-items li a:hover {
+//     color: $color-item-hover;
+// }
+
+.navigation__ul {
+  display: flex;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+}
+
+.navigation__li {
+  list-style: none;
+  padding: 15px 10px;
+  color: $color-white;
+}
+
+.navigation__link {
+  cursor: pointer;
+  @extend %transition;
+  text-decoration: none;
+  color: $color-white;
 }
